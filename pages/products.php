@@ -33,12 +33,7 @@ require_once('auth.php');
     <!-- Custom Fonts -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+    
         <link href="src/facebox.css" media="screen" rel="stylesheet" type="text/css" />
 
         <link rel="stylesheet" type="text/css" media="print" href="print.css" />
@@ -84,11 +79,11 @@ require_once('auth.php');
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">PRODUCT LIST</h1>
+                <h1 class="page-header">Danh mục món ăn</h1>
             </div>
             <div id="maintable"><div style="margin-top: -19px; margin-bottom: 21px;">
 
-             <a  href = "#add" data-toggle = "modal" class="btn btn-primary">Add Product</a>
+             <a  href = "#add" data-toggle = "modal" class="btn btn-primary">Thêm món ăn</a>
                     <?php include 'addproduct.php'; ?>
                     <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
 
@@ -100,7 +95,7 @@ require_once('auth.php');
                                 <th> Danh mục </th>
                                 <th> Giá tiền </th>
                                 <th> Sắp xếp </th>
-                                <th> Supplier </th>
+                                
                                 <th witdh = "10%"> Quantity Left </th>
                                 <th witdh = "10%"> Product Unit </th>
                                 <th> Action </th>

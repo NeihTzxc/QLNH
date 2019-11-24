@@ -12,7 +12,7 @@ require_once('auth.php');
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CURE GROCERY</title>
+    <title>Phần mềm quản lý Nhà Hàng</title>
 
     <link rel="shortcut icon" href="logoc.jpg">
     <!-- Bootstrap Core CSS -->

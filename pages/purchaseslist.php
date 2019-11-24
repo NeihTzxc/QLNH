@@ -12,7 +12,7 @@ require_once('auth.php');
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>CURE GROCERY</title>
+	<title>Phần mềm quản lý Nhà Hàng</title>
 
   <link rel="shortcut icon" href="logoc.jpg">
   <!-- Bootstrap Core CSS -->
@@ -34,12 +34,7 @@ require_once('auth.php');
   <!-- Custom Fonts -->
   <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+  
         <link href="src/facebox.css" media="screen" rel="stylesheet" type="text/css" />
         <script src="lib/jquery.js" type="text/javascript"></script>
         <script src="src/facebox.js" type="text/javascript"></script>
@@ -65,7 +60,7 @@ require_once('auth.php');
         <div class="container-fluid">
          <div class="row">
           <div class="col-lg-12">
-           <h1 class="page-header">PURCHASE ORDER LIST</h1>
+           <h1 class="page-header">Danh sách hóa đơn</h1>
          </div>
          <div id="maintable">
           <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">

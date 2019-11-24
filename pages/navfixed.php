@@ -70,7 +70,7 @@ $finalcode='RS-'.createRandomPassword();
 					<li>
 						<a href="purchaseslist.php"><i class="fa fa-list-alt fa-fw"></i> Hóa đơn</a>
 					</li>
-					<li>
+					<!-- <li>
 						<a href="orderpo.php"><i class="fa fa-list-alt fa-fw"></i> Oder</a>
 					</li>
 					<li>
@@ -88,7 +88,7 @@ $finalcode='RS-'.createRandomPassword();
 					<li>
 						<a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Biểu đồ<span class="fa arrow"></span></a>
 						
-					</li>
+					</li> -->
 
 				</div>
 			</div>
