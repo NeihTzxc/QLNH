@@ -139,13 +139,19 @@ require_once('auth.php');
                                             <td><?php echo $row['supplier']; ?></td>
                                             <td align="right"><?php echo $row['qty_left']; ?></td>
                                             <td ><?php echo $row['unit']; ?></td>
-                                            <td><a rel="facebox" class = "btn btn-primary" href="editproduct.php?id=<?php echo $row['product_id']; ?>">
+                                            <td>
+                                            <a rel="facebox" class = "btn btn-primary" href="editproduct.php?id=<?php echo $row['product_id']; ?>">
                                                 <i class="fa fa-pencil"></i>  
                                             </a>  
-                                          <!--   <a href="#" id="<?php echo $row['product_id']; ?>" class="btn btn-danger delbutton" title="Click To Delete">
+                                            <a href="#" id="<?php echo $row['product_id']; ?>" class="btn btn-danger delbutton" title="Click To Delete">
                                                 <i class="fa fa-trash"></i>
-                                            </a> -->
+                                            </a>
+                                            <a rel="facebox" class="btn btn-primary" href="addproduct.php?name=<?php echo $row['product_code'];?>&code=<?php echo $row['product_code'];?>&bname ">
+                                            <a rel="facebox" class = "btn btn-success"  href="stockin.php?name=<?php echo $row['p_name']; ?>&iv=<?php echo $row['invoice_number']; ?>&qty=<?php echo $row['qty']; ?>&date=<?php echo $row['date_order']; ?>&tid=<?php echo $row['transaction_id']; ?>"">
+                                            
+                                            </a>
                                         </td>
+
                                     </tr>
                                     <?php
                                 }
