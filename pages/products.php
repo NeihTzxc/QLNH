@@ -146,8 +146,8 @@ require_once('auth.php');
                                             <a href="#" id="<?php echo $row['product_id']; ?>" class="btn btn-danger delbutton" title="Click To Delete">
                                                 <i class="fa fa-trash"></i>
                                             </a>
-                                            <a rel="facebox" class="btn btn-primary" href="addproduct.php?name=<?php echo $row['product_code'];?>&code=<?php echo $row['product_code'];?>&bname ">
-                                            <a rel="facebox" class = "btn btn-success"  href="stockin.php?name=<?php echo $row['p_name']; ?>&iv=<?php echo $row['invoice_number']; ?>&qty=<?php echo $row['qty']; ?>&date=<?php echo $row['date_order']; ?>&tid=<?php echo $row['transaction_id']; ?>"">
+                                            <a rel="facebox" class="btn btn-primary" href="addproduct.php?name=<?php echo $row['product_code'];?>&code=<?php echo $row['product_code'];?>"">
+                                           
                                             
                                             </a>
                                         </td>
