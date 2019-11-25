@@ -96,7 +96,7 @@ require_once('auth.php');
                                 <th> Giá tiền </th>
                                 <th> Sắp xếp </th>
                                 
-                                <th witdh = "10%"> Quantity Left </th>
+                                <th witdh = "10%"> Kích cỡ </th>
                                 <th witdh = "10%"> Product Unit </th>
                                 <th> Action </th>
                             </tr>
