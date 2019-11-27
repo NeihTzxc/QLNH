@@ -122,7 +122,7 @@ require_once('auth.php');
     <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
       <thead>
        <tr>
-        <th> Product Name </th>
+        <th> Tên món ăn </th>
         <th> Quantity </th>
         <th> Cost </th>
       </tr>
