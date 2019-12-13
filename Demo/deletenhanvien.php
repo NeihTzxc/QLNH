@@ -4,15 +4,15 @@ require 'connect.php';
 // $madanhmuc=1;
 // $size='lon';
 // $gia=20000;
-$mamon=(int)$_GET['mamon'];
+$manv=(int)$_GET['manv'];
 
 
- $sql ="delete from monan where mamon=$mamon;";
+ $sql ="delete from nhanvien where manv=$manv;";
 
 if(!mysqli_query($conn,$sql))
 {
 die ('Loi sql'.mysql_error($conn));
 }
-header("Location:select.php");
+header("Location:nhanvienlist.php");
 
  ?>

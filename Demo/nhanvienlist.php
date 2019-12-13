@@ -1,7 +1,13 @@
 <?php
-require_once('auth.php');
 require 'connect.php';
-$sql="select mamon,tenmon,monan.madanhmuc, size,gia, danhmuc.tendanhmuc from monan,danhmuc;";
+$sql="select * from nhanvien;";
+
+$result = mysqli_query($conn,$sql);
+if(!$result)
+{
+    die ('Loi'.mysqli_error($conn));
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -50,27 +56,7 @@ $sql="select mamon,tenmon,monan.madanhmuc, size,gia, danhmuc.tendanhmuc from mon
         })
     </script>
 
-    <?php
-    function productcode() {
-        $chars = "003232303232023232023456789";
-        srand((double)microtime()*1000000);
-        $i = 0;
-        $pass = '' ;
-        while ($i <= 7) {
-
-            $num = rand() % 33;
-
-            $tmp = substr($chars, $num, 1);
-
-            $pass = $pass . $tmp;
-
-            $i++;
-
-        }
-        return $pass;
-    }
-    $pcode='P-'.productcode();
-    ?>
+   
 
 </head>
 
@@ -81,50 +67,53 @@ $sql="select mamon,tenmon,monan.madanhmuc, size,gia, danhmuc.tendanhmuc from mon
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Danh mục món ăn</h1>
+                <h1 class="page-header">Danh mục nhân viên</h1>
             </div>
             <div id="maintable"><div style="margin-top: -19px; margin-bottom: 21px;">
 
-             <a  href = "#add" data-toggle = "modal" class="btn btn-primary">Thêm món ăn</a>
-                    <?php include 'addproduct.php'; ?>
+             <a  href = "forminsertnhanvien.php" class="btn btn-primary">Thêm nhân viên</a>
+                    
                     <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
 
                         <thead>
                             <tr>
-                            <td>Ten  mon</td>
-				<td>Ten danh muc</td>
-				<td>Size</td>
-				<td>Gia</td>
-				<td>Delete</td>
-                                
+                                <td>Mã nhân viên</td>
+                                <td>Tên nhân viên</td>
+                                <td>Ngày sinh</td>
+                                <td>Dịa chỉ</td>
+                                <td>Số điện thoại</td>
+                                <td>Vị trí</td>
+                                <td>Delete</td>
+                                <td>Update</td>
                             </tr>
                         </thead>
                         <tbody>
-
-                        <?php
+            <?php
 if(mysqli_num_rows($result)>0)
 {
-	while($row=mysqli_fetch_assoc($result))
-	{?>
-		<tr>
-				<td><?php echo $row['tenmon'] ?></td>
-				<td><?php echo $row['tendanhmuc'] ?></td>
-				<td><?php echo $row['size'] ?></td>
-				<td><?php echo $row['gia'] ?></td>
-				<td> <a href="delete.php?mamon=<?php echo $row['mamon'];?>">Delete</a> </td>
+    while($row=mysqli_fetch_assoc($result))
+    {?>
+        <tr>
+            <td><?php echo $row['manv'] ?></td>
+                <td><?php echo $row['tennv'] ?></td>
+                <td><?php echo $row['ngaysinh'] ?></td>
+                <td><?php echo $row['diachi'] ?></td>
+                <td><?php echo $row['sdt'] ?></td>
+                <td><?php echo $row['vitri'] ?></td>
+                <td> <a href="deletenhanvien.php?manv=<?php echo $row['manv'];?>">Delete</a> </td>
+                <td><a href="formupdatenhanvien.php?manv=<?php echo $row['manv'];?>">Update</a></td>
 
-			</tr>
-			<?php
+            </tr>
+            <?php
 
-	}
+    }
 }
-			?>
-
-                            </tbody>
+            ?>
+            
+        </tbody>
                         </table>
 
-                    <a href="" onclick="window.print()" class="btn btn-primary"><i class="icon-print icon-large"></i> Print</a>
-                    <a href= "product_exp.php" class = "btn btn-primary">View Product Expiration</a>
+                   
                         <div class="clearfix"></div>
                     </div>
                   

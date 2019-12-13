@@ -13,6 +13,6 @@ if(!mysqli_query($conn,$sql))
 {
 die ('Loi sql'.mysql_error($conn));
 }
-header("Location:select.php");
+header("Location:foodlist.php");
 
  ?>
