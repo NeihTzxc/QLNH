@@ -72,7 +72,7 @@ if(!$result)
             </div>
             <div id="maintable"><div style="margin-top: -19px; margin-bottom: 21px;">
 
-             <a  href = "forminsertcategorylist.php" class="btn btn-primary">Thêm danh mục</a>
+             <a  href = "forminsertcategorylist.php" class="btn btn-primary">Thêm món ăn</a>
                     
                     <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
 
