@@ -20,5 +20,10 @@ if(!mysqli_query($conn,$sql))
 die ('Loi sql'.mysql_error($conn));
 }
  // echo "Them thanh cong";
-echo '<a  href = "foodlist.php" class="btn btn-primary">Quay lại</a>';
+{
+	echo 'Thêm thành công ';
+	echo '<br>';
+	echo '<a  href = "foodlist.php" class="btn btn-primary">Quay lại</a>';
+}
+
  ?>
