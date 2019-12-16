@@ -8,7 +8,7 @@
 	
 </head>
 <body>
-<form method="post" action="update.php">
+<form method="post" action="updatefoodlist.php">
 	<table width="500" border="0">
 		<tr > 
 			<td colspan="2" align="center"><strong>Update món ăn</strong></td>

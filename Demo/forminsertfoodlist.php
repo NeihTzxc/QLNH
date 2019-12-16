@@ -6,7 +6,7 @@
 	<title>Form insert món ăn</title>
 </head>
 <body>
-<form method="post" action="insert.php">
+<form method="post" action="insertfoodlist.php">
 	<table width="500" border="0">
 		<tr > 
 			<td colspan="2" align="center"><strong>Insert món ăn</strong></td>
