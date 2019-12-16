@@ -71,6 +71,9 @@ $finalcode='RS-'.createRandomPassword();
 						<a href="nhanvienlist.php"><i class="fa fa-user fa-fw"></i> Danh sách nhân viên</a>
 					</li>
 					<li>
+						<a href="categorylist.php"><i class="fa fa-table fa-fw"></i> Danh mục món ăn</a>
+					</li>
+					<li>
 						<a href="#2"><i class="fa fa-list-alt fa-fw"></i> Hóa đơn</a>
 					</li>
 					<li>

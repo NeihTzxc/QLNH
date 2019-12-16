@@ -1,6 +1,6 @@
 <?php
 require 'connect.php';
-$sql="select mamon,tenmon,monan.madanhmuc, size,gia, danhmuc.tendanhmuc from monan,danhmuc;";
+$sql=" select madanhmuc,tendanhmuc from danhmuc;";
 // $sql="select * from monan, danhmuc;";
 
 $result = mysqli_query($conn,$sql);
@@ -68,21 +68,19 @@ if(!$result)
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Danh sách món ăn</h1>
+                <h1 class="page-header">Danh mục món ăn</h1>
             </div>
             <div id="maintable"><div style="margin-top: -19px; margin-bottom: 21px;">
 
-             <a  href = "forminsertfoodlist.php" class="btn btn-primary">Thêm món ăn</a>
+             <a  href = "forminsertcategorylist.php" class="btn btn-primary">Thêm món ăn</a>
                     
                     <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
 
                         <thead>
                             <tr>
-                                <td>Mã món</td>
-                                <td>Tên món</td>
+                                <td>Mã danh mục </td>
                                 <td>Tên danh mục</td>
-                                <td>Size</td>
-                                <td>Giá</td>
+                                
                                 <td>Delete</td>
                                 <td>Update</td>
                             </tr>
@@ -94,13 +92,11 @@ if(mysqli_num_rows($result)>0)
     while($row=mysqli_fetch_assoc($result))
     {?>
         <tr>
-            <td><?php echo $row['mamon'] ?></td>
-                <td><?php echo $row['tenmon'] ?></td>
+            <td><?php echo $row['madanhmuc'] ?></td>
                 <td><?php echo $row['tendanhmuc'] ?></td>
-                <td><?php echo $row['size'] ?></td>
-                <td><?php echo $row['gia'] ?></td>
-                <td> <a href="deletefoodlist.php?mamon=<?php echo $row['mamon'];?>">Delete</a> </td>
-                <td><a href="formupdatefoodlist.php?mamon=<?php echo $row['mamon'];?>">Update</a></td>
+                
+                <td> <a href="deletecategorylist.php?mamon=<?php echo $row['madanhmuc'];?>">Delete</a> </td>
+                <td><a href="formupdatecategorylist.php?mamon=<?php echo $row['madanhmuc'];?>">Update</a></td>
 
             </tr>
             <?php
