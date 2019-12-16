@@ -72,7 +72,7 @@ if(!$result)
             </div>
             <div id="maintable"><div style="margin-top: -19px; margin-bottom: 21px;">
 
-             <a  href = "forminsertfoodlist.php" class="btn btn-primary">Thêm món ăn</a>
+             <a  href = "forminsert.php" class="btn btn-primary">Thêm món ăn</a>
                     
                     <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
 
@@ -99,8 +99,8 @@ if(mysqli_num_rows($result)>0)
                 <td><?php echo $row['tendanhmuc'] ?></td>
                 <td><?php echo $row['size'] ?></td>
                 <td><?php echo $row['gia'] ?></td>
-                <td> <a href="deletefoodlist.php?mamon=<?php echo $row['mamon'];?>">Delete</a> </td>
-                <td><a href="formupdatefoodlist.php?mamon=<?php echo $row['mamon'];?>">Update</a></td>
+                <td> <a href="delete.php?mamon=<?php echo $row['mamon'];?>">Delete</a> </td>
+                <td><a href="formupdate.php?mamon=<?php echo $row['mamon'];?>">Update</a></td>
 
             </tr>
             <?php
