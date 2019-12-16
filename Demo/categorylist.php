@@ -95,8 +95,8 @@ if(mysqli_num_rows($result)>0)
             <td><?php echo $row['madanhmuc'] ?></td>
                 <td><?php echo $row['tendanhmuc'] ?></td>
                 
-                <td> <a href="deletecategorylist.php?mamon=<?php echo $row['madanhmuc'];?>">Delete</a> </td>
-                <td><a href="formupdatecategorylist.php?mamon=<?php echo $row['madanhmuc'];?>">Update</a></td>
+                <td> <a href="deletecategorylist.php?madanhmuc=<?php echo $row['madanhmuc'];?>">Delete</a> </td>
+                <td><a href="formupdatecategorylist.php?madanhmuc=<?php echo $row['madanhmuc'];?>">Update</a></td>
 
             </tr>
             <?php
