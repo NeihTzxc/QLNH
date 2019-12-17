@@ -21,9 +21,7 @@ die ('Loi sql'.mysql_error($conn));
 }
  // echo "Them thanh cong";
 {
-	echo 'Thêm thành công ';
-	echo '<br>';
-	echo '<a  href = "foodlist.php" class="btn btn-primary">Quay lại</a>';
+	header("Location:categorylist.php");;
 }
 
  ?>
