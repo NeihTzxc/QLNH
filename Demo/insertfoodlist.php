@@ -21,7 +21,7 @@ die ('Loi sql'.mysql_error($conn));
 }
  // echo "Them thanh cong";
 {
-	header("Location:categorylist.php");;
+	header("Location:foodlist.php");
 }
 
  ?>
