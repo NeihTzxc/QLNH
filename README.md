@@ -2,6 +2,7 @@
 # NGÔN NGỮ ĐƯỢC SỬ DỤNG:<br>
 -Ngôn ngữ phía Server được sử dụng là PHP.<br>
 -Ngôn ngữ phía Client được sử dụng là HTML, JS, CSS.<br>
+-Cơ sở dữ liệu sử dụng là MySql.<br>
 -Sử dụng Framework Bootstrap của CSS. <br>
 
 1. Mô tả bài toán:<br>
