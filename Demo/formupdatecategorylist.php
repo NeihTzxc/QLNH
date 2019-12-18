@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Form update danh mục món ăn</title>
+	<title>Form update danh mục các món ăn</title>
 	<?php $madanhmuc=(int)$_GET['madanhmuc']; ?>
 	
 </head>
