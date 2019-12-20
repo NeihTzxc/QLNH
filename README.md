@@ -27,9 +27,14 @@ Bước 1: Clone Responsity này về.<br>
 Bước 2: Dùng XAMPP, clone về thư mục htdocs của Xampp.<br>
 Bước 3: Run xampp và chạy Apache và Mysql.<br>
 4. Nội dung bài toán:<br>
--Trong thư mục DEMO chứa các file chạy ứng dụng.<br>
+Trong thư mục DEMO chứa các file chạy ứng dụng.<br>
+Trong thư mục Admin chứa các file chạy ứng dụng dưới quyền người quản trị: <br>
 -File home.php là trang chủ của ứng dụng. <br>
 -File foodlist.php chứa các thành phần để hiển thị danh sách các món ăn:<br>
 +Các chức năng thêm, xóa, sửa và tìm kiếm món ăn. <br>
 +Các thành phẩn hiển thị bao gồm: mã món, tên món, tên danh mục món, size và giá. <br>
+Trong thư mục User chứa các file chạy ứng dụng dưới quyền User:
+-File index.php là file chạy đầu tiên.
+
+
 5. Hướng phát triển thêm cho bài toán:
