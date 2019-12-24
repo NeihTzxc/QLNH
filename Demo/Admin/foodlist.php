@@ -1,6 +1,6 @@
 <?php
 require 'connect.php';
-$sql="select mamon,tenmon,monan.madanhmuc, size,gia, danhmuc.tendanhmuc from monan,danhmuc;";
+$sql="select mamon,tenmon,monan.madanhmuc, size,gia, danhmuc.tendanhmuc from monan,danhmuc where monan.madanhmuc=danhmuc.madanhmuc;";
 // $sql="select * from monan, danhmuc;";
 
 $result = mysqli_query($conn,$sql);
