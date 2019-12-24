@@ -74,7 +74,7 @@ $finalcode='RS-'.createRandomPassword();
 						<a href="categorylist.php"><i class="fa fa-table fa-fw"></i> Danh mục món ăn</a>
 					</li>
 					<li>
-						<a href="#2"><i class="fa fa-list-alt fa-fw"></i> Hóa đơn</a>
+						<a href="hoadon.php"><i class="fa fa-list-alt fa-fw"></i> Hóa đơn</a>
 					</li>
 					<li>
 						<a href="#3"><i class="fa fa-list-alt fa-fw"></i> Oder</a>
