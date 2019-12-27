@@ -10,6 +10,7 @@
 -Ứng dụng sẽ giúp các nhà hàng tăng năng suất lao động, giảm thời gian truy xuất, thống kê.<br>
 -Ứng dụng có chức năng quản lý được nhân viên, quản lý được các món ăn, quản lý được các hóa đơn xuất ra.<br>
 -Ngoài ra ứng dụng còn hỗ trợ thống kê, tạo báo cáo, tạo biểu đồ thống kê thu nhập của nhà hàng.<br>
+-Chức năng hiển thị menu các món ăn cho khách hàng và để cho khách hàng chọn món.
 2. Mục đích bài toán:<br>
 Đầu vào:<br>
 -Tên món ăn, danh mục món ăn, giá tiền và size.<br>
