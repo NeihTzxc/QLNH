@@ -27,6 +27,7 @@
 Bước 1: Clone Responsity này về.<br>
 Bước 2: Dùng XAMPP, clone về thư mục htdocs của Xampp.<br>
 Bước 3: Run xampp và chạy Apache và Mysql.<br>
+Bước 4: Mở thư mục DEMO
 4. Nội dung bài toán:<br>
 Trong thư mục DEMO chứa các file chạy ứng dụng.<br>
 Trong thư mục Admin chứa các file chạy ứng dụng dưới quyền người quản trị: <br>
