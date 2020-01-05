@@ -39,4 +39,5 @@ Trong thư mục User chứa các file chạy ứng dụng dưới quyền User:
 -File index.php là file chạy đầu tiên.
 
 
-5. Hướng phát triển thêm cho bài toán:
+5. Hướng phát triển thêm cho bài toán:<br>
+-Phát triển chức năng thống kê doanh thu
